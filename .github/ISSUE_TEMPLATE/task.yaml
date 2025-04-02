@@ -1,5 +1,5 @@
-name: "📝 Task with checklist"
-description: "Задача с чек-листом Definition of Done (DoD)"
+name: "📝 Software development task"
+description: "Software development task with definition of done (DoD) checklist"
 title: "[TASK] "
 labels: [task]
 assignees: []
@@ -9,8 +9,8 @@ body:
     id: description
     attributes:
       label: "📌 Description"
-      description: "Опишите задачу и что нужно сделать"
-      placeholder: "Опишите суть задачи..."
+      description: "Describe the task and what needs to be done"
+      placeholder: "Describe the essence of the task..."
     validations:
       required: true
 
@@ -22,7 +22,12 @@ body:
         - label: "The task is implemented according to the requirements."
           required: true
         - label: "The code is covered with unit tests."
+          required: true
         - label: "Static code analysis has been completed with no critical issues."
+          required: true
         - label: "A pull request has been created."
+          required: true
         - label: "The code has passed the code review."
+          required: true
         - label: "The pull request has been successfully merged."
+          required: true
